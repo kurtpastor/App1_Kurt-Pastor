@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="265dp"
+        android:layout_height="28dp"
+        android:background="#FDFDFD"
+        android:fontFamily="@font/alegreya_black_italic"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textColor="#855002"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <TextView
+        android:id="@+id/with"
+        android:layout_width="264dp"
+        android:layout_height="28dp"
+        android:background="#FDFDFD"
+        android:fontFamily="@font/alegreya_black_italic"
+        android:text="With"
+        android:textAlignment="center"
+        android:textColor="#855002"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
+
+
+    <TextView
+        android:id="@+id/bakedLove"
+        android:layout_width="143dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/alegreya_black_italic"
+        android:text="BAKED LOVE"
+        android:textAlignment="center"
+        android:textColor="#855002"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="127dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baker" />
+
+    <Button
+        android:id="@+id/mixButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="235dp"
+        android:backgroundTint="#855002"
+        android:text="MIX"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strawberry" />
+
+    <ImageView
+        android:id="@+id/croissant"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:alpha=".5"
+        app:layout_constraintBottom_toTopOf="@+id/with"
+        app:layout_constraintEnd_toStartOf="@+id/donut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add"
+        app:srcCompat="@drawable/croissant" />
+
+
+    <ImageView
+        android:id="@+id/donut"
+        android:layout_width="85dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="8dp"
+        android:alpha=".5"
+        app:layout_constraintBottom_toTopOf="@+id/with"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/donut" />
+
+    <ImageView
+        android:id="@+id/muffin"
+        android:layout_width="86dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="6dp"
+        android:alpha=".5"
+        app:layout_constraintBottom_toTopOf="@+id/with"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        app:srcCompat="@drawable/cupcake" />
+
+    <ImageView
+        android:id="@+id/chocolate"
+        android:layout_width="74dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="280dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mixButton"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/with"
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@drawable/chocolate" />
+
+    <ImageView
+        android:id="@+id/strawberry"
+        android:layout_width="95dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="20dp"
+        android:alpha=".5"
+        app:layout_constraintBottom_toTopOf="@+id/mixButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/with"
+        app:srcCompat="@drawable/strawberry" />
+
+    <ImageView
+        android:id="@+id/vanilla"
+        android:layout_width="82dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="285dp"
+        android:alpha=".5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/strawberry"
+        app:layout_constraintTop_toBottomOf="@+id/with"
+        app:srcCompat="@drawable/vanilla" />
+
+    <ImageView
+        android:id="@+id/microwave"
+        android:layout_width="253dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mixButton"
+        app:srcCompat="@drawable/microwave" />
+
+    <ImageView
+        android:id="@+id/imageSet"
+        android:layout_width="214dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="440dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/croissant" />
+
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#855002"
+        android:text="Restart"
+        app:layout_constraintBottom_toTopOf="@+id/microwave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mixButton"
+        app:layout_constraintTop_toBottomOf="@+id/strawberry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
